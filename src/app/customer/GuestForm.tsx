@@ -35,7 +35,7 @@ const GuestForm: FunctionComponent<GuestFormProps & WithLanguageProps & FormikPr
     continueAsGuestButtonLabelId,
     isLoading,
     onChangeEmail,
-    onShowLogin,
+    // onShowLogin,
     privacyPolicyUrl,
     requiresMarketingConsent,
 }) => {
@@ -99,8 +99,9 @@ const GuestForm: FunctionComponent<GuestFormProps & WithLanguageProps & FormikPr
                         { ' ' }
                         <a
                             data-test="customer-continue-button"
+                            href="https://b2crepacstbd.b2clogin.com/b2crepacstbd.onmicrosoft.com/b2c_1a_signup_signin/oauth2/v2.0/authorize?client_id=d0d575cc-1414-487a-8cb0-a36d3b9dbe54&redirect_uri=https%3A%2F%2Fcfa-bc-mvp.herokuapp.com%2Flogin-with-ext-jwt&response_mode=form_post&response_type=id_token&scope=openid&state=%2Fcheckout"
                             id="checkout-customer-login"
-                            onClick={ onShowLogin }
+                            // onClick={ onShowLogin }
                         >
                             <TranslatedString id="customer.login_action" />
                         </a>
